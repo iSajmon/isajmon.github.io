@@ -4,8 +4,8 @@ body {
 }
 
 .film {
-    width:1520px;
-     height: 745px;
+    width: 100%;
+     height: 100%;
     position: absolute; /* ustawia pozycję kontenera na absolutną, aby można było go wyśrodkować */
     top: 50%; /* przesuwa górną krawędź kontenera na 50% od góry strony */
     left: 50%; /* przesuwa lewą krawędź kontenera na 50% od lewej krawędzi strony */
