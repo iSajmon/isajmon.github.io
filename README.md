@@ -1,1 +1,1 @@
-# iSajmon.github.io
+open index.html
