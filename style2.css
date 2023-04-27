@@ -172,7 +172,7 @@ body {
 }
 
 .odliczanie {
-  background-color: white;
+  background-color: #282828;
   height: 100%;
   border-radius: 15px;
   width: 100%;
@@ -186,15 +186,16 @@ body {
   font-family: Trebuchet MS;
   font-size: 25px;
   text-align: center;
-  color: #787060;
+  color: white;
   margin: 10px;
 }
 
 .zacz p {
-  font-family: monospace;
+  font-family: Trebuchet MS;
+  font-weight: 650;
   font-size: 35px;
   text-align: center;
-  color: #787060;
+  color: white;
   margin: 10px;
 }
 
