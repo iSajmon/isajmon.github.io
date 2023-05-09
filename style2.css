@@ -205,3 +205,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.stol embed {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 25px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
