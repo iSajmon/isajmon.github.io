@@ -1,0 +1,46 @@
+body {
+    
+    background: rgb(205,250,255);
+    background: linear-gradient(0deg, rgba(205,250,255,1) 0%, rgba(255,255,255,1) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 5px;
+    
+}
+.menu {
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    
+}
+.menu img {
+    height: 5%;
+    width: 5%;
+    border: solid red;
+    padding: 5px;
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.przycisk {
+    padding-top: 40px;
+}
+button {
+    
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgb(233, 234, 235);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    border: none;
+    box-shadow: inset;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7289da;
+    cursor: pointer;
+}
