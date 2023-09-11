@@ -1,1 +1,1 @@
-n
+open index.html
