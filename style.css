@@ -63,7 +63,7 @@ body {
 }
 
 button:hover {
-  background-color: #7289da;
+  background-color: rgb(207, 215, 221);
   cursor: pointer;
 }
 .space_space {
