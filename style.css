@@ -21,6 +21,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 16px;
 }
 .menu p {
   font-size: 30px;
