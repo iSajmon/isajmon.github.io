@@ -46,6 +46,7 @@ body {
   border-bottom-right-radius: 5px;
 }
 .projekt img {
+  object-fit: cover;
   height: 215px;
   width: 350px;
   border-top-left-radius: 15px;
