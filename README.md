@@ -1,6 +1,6 @@
 # TO DO
-Something like that
-- window.addEventListener( "pageshow", function ( event ) {
+- Something like that
+-- window.addEventListener( "pageshow", function ( event ) {
   var historyTraversal = event.persisted || 
                          ( typeof window.performance != "undefined" && 
                               window.performance.navigation.type === 2 );
@@ -9,3 +9,6 @@ Something like that
     window.location.reload();
   }
 });
+
+- fix site
+
