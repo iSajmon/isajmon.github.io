@@ -1,5 +1,5 @@
 # TO DO
-[] Something like that
+- Something like that
     window.addEventListener( "pageshow", function ( event ) {
   var historyTraversal = event.persisted || 
                          ( typeof window.performance != "undefined" && 
@@ -10,5 +10,5 @@
   }
 });
 
-[] fix site
+- fix site
 
