@@ -163,7 +163,7 @@ button:hover {
 
 @media (max-width: 600px) {
   .menu img {
-    width: 15%;
+    width: 20%;
     padding-left: 15px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
