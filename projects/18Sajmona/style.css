@@ -15,8 +15,8 @@ body{
   background-image: url("assets/img/background.png");
   background-size: cover;
 }
-.all {
-  display: block;
+body {
+ 
   position: relative;
   animation-name: animatebottom;
   animation-duration: 2s;
