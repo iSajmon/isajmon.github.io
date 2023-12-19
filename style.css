@@ -2,6 +2,10 @@
   font-family: "Kanit-Ligh";
   src: url(/assets/font/Kanit-Light.ttf);
 }
+@font-face {
+  font-family: "PDark";
+  src: url(/assets/font/PDARK.TTF);
+}
 & /*loader*/ {
   & .load {
     display: none;
@@ -67,7 +71,7 @@ body {
   background: linear-gradient(
     0deg,
     rgba(205, 250, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
+    hwb(0 100% 0%) 100%
   );
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -148,6 +152,7 @@ button:hover {
   cursor: pointer;
 }
 .space_space {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +162,7 @@ button:hover {
   flex-wrap: wrap;
   gap: 0.5%;
   justify-content: center;
-
+  
   width: 95%;
 }
 
@@ -195,7 +200,7 @@ button:hover {
 
 footer {
   font-size: 9px;
-  font-family: Kanit-Ligh;
+  font-family: PDark;
   text-align: center;
   margin-top: auto;
 }
