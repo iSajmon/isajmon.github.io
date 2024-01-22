@@ -1,3 +1,6 @@
+function qs(a){return document.querySelector(a);}
+function qsAll(a) {return document.querySelectorAll(a);}
+
 let czas;
 
 function showPage(url) {
