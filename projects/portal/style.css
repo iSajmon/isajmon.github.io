@@ -2,6 +2,10 @@
   font-family: moli;
   src: url(assets/font/Mooli-Regular.ttf);
 }
+@font-face {
+  font-family: starwars;
+  src: url(/assets/font/soloist1.ttf);
+}
 
 .all {
   display: block;
