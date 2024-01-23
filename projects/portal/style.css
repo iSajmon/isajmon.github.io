@@ -19,6 +19,14 @@
     opacity: 1;
   }
 }
+
+.tytul {
+  font-family: starwars;
+  font-weight: 100;
+  font-size: 67px;
+
+}
+
 header {
   background-image: url(assets/img/kosmos.jpg);
   border-bottom-left-radius: 15px;
