@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Kalkulator Spalania Paliwa</title>
+</head>
+<body>
+    <main>
+        <table>
+            <tr>
+                <td>Spalanie:</td>
+                <td>
+                    <input type="number" id="spalanie" onclick="showKm()">
+                    <span>L</span>
+                    <span class="km">/ 100km</span>
+                </td>  <!--Do zapytania o elemenet-->
+            </tr>
+            <tr>
+                <td>Dystans:</td>
+                <td><input type="number" id="dystans"><span> km</span> </td>
+            </tr>
+            <tr>
+                <td>Cena paliwa:</td>
+                <td><input type="number" id="cena"><span> zł</span> </td>
+            </tr>
+        </table>
+        
+    </main>
+</body>
+</html>
