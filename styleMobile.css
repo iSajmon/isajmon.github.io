@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: "Kanit-Ligh";
   src: url(/assets/font/Kanit-Light.ttf);
@@ -11,7 +9,7 @@
 & /*loader*/ {
   & .load {
     display: none;
-
+   
     margin: auto;
     z-index: 1;
   }
@@ -31,10 +29,10 @@
   }
   & .load p {
     font-family: Kanit-Ligh;
-    font-size: 50px;
+    font-size: 50px;  
     margin-top: 80%;
     font-weight: bold;
-    text-align: center;
+    text-align: center;    
   }
 }
 
@@ -53,7 +51,7 @@
     display: block;
     position: relative;
     animation-name: animatebottom;
-    animation-duration: 1s;
+    animation-duration: 2s;
   }
 }
 
@@ -69,7 +67,6 @@
 }
 
 body {
-  overflow-x: hidden;
   background: rgb(205, 250, 255);
   background: linear-gradient(
     0deg,
@@ -94,19 +91,16 @@ body {
     top: 16px;
     border-radius: 15px;
     box-shadow: 0px -100px 70px 52px rgb(249, 250, 253);
-    z-index: 3;
   }
   & .menu {
-    z-index: 4;
     background-color: aliceblue;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
     top: 16px;
-    width: 100%;
   }
   & .menu p {
     
@@ -123,8 +117,10 @@ body {
   & .whatsNew{
     position: absolute;
     margin: auto;
-    right: 20px;
-    font-size: 20px;
+    bottom: 5px;
+    font-size: 12px;
+
+
     transition: scale 0.5s;
     
     
@@ -167,49 +163,18 @@ body {
   }
 }
 
+.spaceSlide {
+  display: none;
+}
+
 button:hover {
   background-color: rgb(207, 215, 221);
   cursor: pointer;
 }
-
-@keyframes slideAnimation {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.spaceSlide {
-  z-index: 2;
-  overflow: hidden;
-  margin-top: 30px;
-  padding: 20px 0;
-  display: flex;
-  gap: 10px;
-}
-.spaceSlide:hover .space {
-  animation-play-state: paused;
-  transition: animation 10s;
-}
-.space {
-  animation: slideAnimation 35s infinite linear;
-  display: flex;
-  gap: 10px;
-}
-
 .rest {
-  margin-top: 80px;
+  
   & h1 {
-    font-family: Kanit-Ligh;
-    font-weight: 800;
-    color: #000000;
-    margin: auto;
-    text-align: center;
-    font-size: 40px;
-
-    width: 40%;
+    display: none;
   }
   & .restProjects {
     display: flex;
@@ -220,6 +185,7 @@ button:hover {
     margin: auto;
   }
 }
+
 
 @media (max-width: 600px) {
   .menu img {
