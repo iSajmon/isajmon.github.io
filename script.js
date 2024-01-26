@@ -9,9 +9,12 @@ function showPage(url) {
   document.querySelector("footer").style.display = "none";
    setTimeout(function() {
     window.location.href = url;
-    document.querySelector(".load").style.display = "none";
-    document.querySelector(".main").style.display = "block";
-    document.querySelector("footer").style.display = "block";
+    setTimeout(function(){
+      document.querySelector(".load").style.display = "none";
+      document.querySelector(".main").style.display = "block";
+      document.querySelector("footer").style.display = "block";
+
+    }, 500);
  }, 3000);  
 }
 
