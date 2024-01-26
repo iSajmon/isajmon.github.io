@@ -8,7 +8,7 @@ function showPage(url) {
   document.querySelector(".main").style.display = "none";
   document.querySelector("footer").style.display = "none";
    setTimeout(function() {
-    window.open(url, '_blank');
+    window.open(url);
     document.querySelector(".load").style.display = "none";
     document.querySelector(".main").style.display = "block";
     document.querySelector("footer").style.display = "block";
