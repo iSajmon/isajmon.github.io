@@ -4,30 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <title>Kalkulator Spalania Paliwa</title>
 </head>
 <body>
+
+    <div id="info" class="info">
+        <div class="infoText">
+        <h1>Strona nie została skończona, jest to tylko wersja demo</h1>
+        <button onclick="hideInfo()">OK</button>
+        </div>
+    </div>
+
     <main>
+        
+        <div class="firstPart" id="paliwo">
+        <form>
+            <table>
+                <tr>
+                  
+                    <td><p>Spalanie: &nbsp; </p></td>
+                    <td><div class="dane"><input type="number" id="spalanie" onclick="showJednostka(this)"  placeholder="9,5">
+                <p class="jednostkaHidden" id="jednostka_spalanie">L/100Km</p></div></td>
+                 
+          
+            </tr>
+            <tr>
+                 <td><p>Dystans: &nbsp; </p></td>
+                <td><div class="dane"><input type="number" id="dystans" onclick="showJednostka(this)" placeholder="100">
+                <p class="jednostkaHidden" id="jednostka_dystans">Km</p> </div>   </td>
+                
+           
+            </tr>
+            
+           <tr>
+                <td><p>Cena paliwa: &nbsp; </p></td>
+                <td><div class="dane"><input type="number" id="cena" onclick="showJednostka(this)" placeholder="6,38">
+                <p class="jednostkaHidden" id="jednostka_cena">PLN</p></div> </td>
+                
+      
+           </tr>
+            
+        </table>
+        </form>
+        <div class="przykladyCen">
+            <div class="przykladCena" style="background-color: rgb(85, 163, 9);" onclick="wybranaCena(6.38)">
+                <h3>95</h3>6,38 <span class="miniJednostka">PLN</span>
+              </div>
+              <div class="przykladCena" style="background-color: rgb(79, 144, 15);" onclick="wybranaCena(7.10)">
+                <h3>98</h3>7,10 <span class="miniJednostka">PLN</span>
+              </div>
+              <div class="przykladCena" style="background-color: rgb(74, 74, 74);" onclick="wybranaCena(6.60)">
+                <h3>ON</h3>6,60 <span class="miniJednostka">PLN</span>
+              </div>
+              <div class="przykladCena" style="background-color: rgb(53, 53, 53);" onclick="wybranaCena(6.80)">
+                <h3>LPG</h3>6,80 <span class="miniJednostka">PLN</span>
+              </div>
+              <div class="przykladCena" style="background-color: rgb(0, 174, 239) ;" onclick="wybranaCena(2.80)">
+                <h3>ON+</h3>2,80 <span class="miniJednostka">PLN</span>
+              </div>
+        </div>
+        <div class="resultPart">
+            <h2>Koszty</h2>
+            <label id="cenaPaliwa">0,00</label> <label>PLN</label>
+            <br>
+            <button class="oblicz" onclick="obliczKoszty()">OBLICZ</button>
+        </div>
+    </div>
+    <div class="dataPart">
         <table>
             <tr>
-                <td>Spalanie:</td>
-                <td>
-                    <input type="number" id="spalanie" onclick="showKm()">
-                    <span>L</span>
-                    <span class="km">/ 100km</span>
-                </td>  <!--Do zapytania o elemenet-->
+                <th>
+                    <h2>SPALANIE PALIWA</h2>
+                </th>
+                <th>
+                    <h2>DYSTANS</h2>
+                </th>
+                <th>
+                    <h2>CENA PALIWA</h2>
+                </th>
             </tr>
             <tr>
-                <td>Dystans:</td>
-                <td><input type="number" id="dystans"><span> km</span> </td>
-            </tr>
-            <tr>
-                <td>Cena paliwa:</td>
-                <td><input type="number" id="cena"><span> zł</span> </td>
+                <td><label id="wprowadzoneSpalanie" class="koncoweDane">0.00</label> <label class="jednostkaTable">L/100Km</label></td>
+                <td><label id="wprowadzoneDystans"class="koncoweDane">0.00</label>  <label class="jednostkaTable">Km</label></td>
+                <td><label id="wprowadzoneCena"class="koncoweDane">6.38</label>  <label class="jednostkaTable">PLN</label></td>
             </tr>
         </table>
-        
+    </div>
     </main>
+
+
+
+
+    <!-- <table >
+        <tr>
+            <td>Spalanie:</td>
+            <td>
+                <input type="number" id="spalanie" onclick="showKm()">
+                <span>L</span>
+                <span class="km">/ 100km</span> 
+            </td>  Do zapytania o elemenet
+        </tr>
+        <tr>
+            <td>Dystans:</td>
+            <td><input type="number" id="dystans" class="jednostka"><span> km</span> </td>
+        </tr>
+        <tr>
+            <td>Cena paliwa:</td>
+            <td><input type="number" id="cena" class="jednostka"><span> zł</span> </td>
+        </tr>
+    </table> -->
+    
 </body>
 </html>
