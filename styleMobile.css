@@ -1,11 +1,8 @@
-@font-face {
-  font-family: "Kanit-Ligh";
-  src: url(/assets/font/Kanit-Light.ttf);
+* {
+  transition: all 0.2s;
 }
-@font-face {
-  font-family: "PDark";
-  src: url(/assets/font/PDARK.TTF);
-}
+
+
 & /*loader*/ {
   & .load {
     display: none;
@@ -91,16 +88,19 @@ body {
     top: 16px;
     border-radius: 15px;
     box-shadow: 0px -100px 70px 52px rgb(249, 250, 253);
+    z-index: 3;
   }
   & .menu {
+    z-index: 4;
     background-color: aliceblue;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
     top: 16px;
+    width: 100%;
   }
   & .menu p {
     
@@ -124,11 +124,37 @@ body {
     transition: scale 0.5s;
     
     
+    
   }
   & .whatsNew:hover {
     cursor: pointer;
     scale: 1.1;
     transition: scale 0.5s, ;
+  }
+  & .modeSlider {
+    left: 20px;
+    position: absolute;
+    font-weight: bold;
+    display: flex;
+    font-size: 15px;
+    border: solid 3px rgb(80, 80, 80);
+    border-radius: 15px;
+    padding: 5px 2px;
+    width: 20px;
+    height: 50px;
+    margin: auto;
+    
+    align-items: center;
+    & .sliderCircle {
+      border-radius: 50px;
+      width: 20px;
+      height: 20px;
+      background-color: rgb(80, 80, 80);
+      cursor: pointer;
+      margin-top: -25px;
+      transition: margin 0.5s;
+    }
+    
   }
 }
 
@@ -160,6 +186,28 @@ body {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     font-weight: 600;
+    
+  }
+  & .warningBadge {
+    color: rgb(38, 236, 177);
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    border: solid 3px rgb(38, 236, 177);
+    border-radius: 15px;
+    padding: 3px 5px;
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    & .circle {
+      border-radius: 50px;
+      width: 20px;
+      height: 20px;
+      background-color: rgb(38, 236, 177);
+      margin-right: 5px;
+    }
   }
 }
 
