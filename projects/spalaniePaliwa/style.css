@@ -58,10 +58,12 @@ body{
     
 }
 
-
+.main {
+  width: 100%;
+}
 
 .firstPart {
-    width: 100vw; /* tu jest problem */
+    width: 100%; /* tu jest problem */
     
     display: flex;
     text-align: center;
