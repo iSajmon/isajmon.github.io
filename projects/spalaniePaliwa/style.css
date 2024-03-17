@@ -44,26 +44,8 @@ main {
     width: 100%;
 }
 
-<<<<<<< HEAD
 
 .firstPart {
-=======
-.km.show {
-    position: relative;
-    opacity: 1;
-    height: auto;
-    margin: auto;  /* Ustaw to na odpowiedni margines dla Twoich potrzeb */
-    
-}
-
-main {
-  width: 100%;
-}
-
-.firstPart {
-    width: 100%; /* tu jest problem */
-    
->>>>>>> 0ebba53ac24a992933571a92b5483ff764216709
     display: flex;
     text-align: center;
     
