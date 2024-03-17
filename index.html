@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" id="style" media="screen and (min-width: 600px)"/>
+    <link rel="stylesheet" href="styleMobile.css" id="styleMobile" media="screen and (max-width: 600px)"/>
+    <link rel="stylesheet" href="styleFont.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/img/S1ProjectsLogo.png"
+    />
+    <script defer src="script.js"></script>
+    <title>S1PROJECTS</title>
+  </head>
+  <body onload="scrollAnimation()" style="margin: 0">
+    <div class="load">
+      <div id="loader"></div>
+      <p>ŁADOWANIE STRONY</p>
+    </div>
+    <div class="main">
+      <div class="menu_blur">
+        <div class="menu">
+          <img src="assets/img/S1v3.png" alt="logo" />
+          <div class="modeSlider"> 
+            <div class="sliderCircle" onclick="changeStyle()"></div>
+          </div>
+          <p style="font-size: 30px;"><b>PROJECTS</b></p>
+          <p class="whatsNew" onclick="showPage('whatsNew.html')">what's new?</p>
+        </div>
+      </div>
+      
+      <div class="spaceSlide">
+        <div class="space">
+          <div class="projekt">
+            <img src="assets/img/p18.jpg" alt="p18.jpg"/>
+            <div class="przycisk">
+              <button onclick="showPage('projects/18Sajmona/index.html')">
+                18
+              </button>
+            </div>
+          </div>
+          <div class="projekt">
+            <img src="assets/img/pportal.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('projects/portal/index.html')">
+                PORTAL
+                <div class="warningBadge" style="border-color: rgb(223, 39, 14); color:rgb(223, 39, 14);">
+                  <div class="circle" style="background-color: rgb(223, 39, 14);"></div> PC ONLY
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="projekt">
+            <img src="assets/img/BB.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('/projects/BB/index.html')">BB
+                <div class="warningBadge" style="border-color: rgb(144, 30, 250); color:rgb(144, 30, 250);">
+                  <div class="circle" style="background-color: rgb(144, 30, 250);"></div> WORK IN PROGRESS
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="projekt">
+            <img src="assets/img/MULTIVERSE.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('/projects/multiverse/index.html')">
+                MULTIVERSE
+                <div class="warningBadge" style="border-color: rgb(223, 39, 14); color:rgb(223, 39, 14);">
+                  <div class="circle" style="background-color: rgb(223, 39, 14);"></div> PC ONLY
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="projekt">
+            <img src="assets/img/kp.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('/projects/spalaniePaliwa/index.html')">
+                Kalkulator Paliwa
+                <div class="warningBadge">
+                  <div class="circle"></div> NEW VERSION
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!--Nieuzywane
+
+        <div class="projekt">
+          <img src="TEMPLATETEMPLATE.jpg" alt="TEMPLATETEMPLATE" />
+          <div class="przycisk">
+            <button onclick="showPage('#')">PROJEKT</button>
+          </div>
+        </div>
+        --></div>
+        <div class="space">
+          <div class="projekt">
+            <img src="assets/img/p18.jpg" alt="p18.jpg" />
+            <div class="przycisk">
+              <button onclick="showPage('projects/18Sajmona/index.html')">
+                18
+              </button>
+            </div>
+          </div>
+          <div class="projekt">
+            <img src="assets/img/pportal.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('projects/portal/index.html')">
+                PORTAL
+                <div class="warningBadge" style="border-color: rgb(223, 39, 14); color:rgb(223, 39, 14);">
+                  <div class="circle" style="background-color: rgb(223, 39, 14);"></div> PC ONLY
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="projekt">
+            <img src="assets/img/BB.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('/projects/BB/index.html')">BB
+                <div class="warningBadge" style="border-color: rgb(144, 30, 250); color:rgb(144, 30, 250);">
+                  <div class="circle" style="background-color: rgb(144, 30, 250);"></div> WORK IN PROGRESS
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="projekt">
+            <img src="assets/img/MULTIVERSE.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('/projects/multiverse/index.html')">
+                MULTIVERSE
+                <div class="warningBadge" style="border-color: rgb(223, 39, 14); color:rgb(223, 39, 14);">
+                  <div class="circle" style="background-color: rgb(223, 39, 14);"></div> PC ONLY
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="projekt">
+            <img src="assets/img/kp.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('/projects/spalaniePaliwa/index.html')">
+                Kalkulator Paliwa
+                <div class="warningBadge">
+                  <div class="circle"></div> NEW VERSION
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!--Nieuzywane
+
+        <div class="projekt">
+          <img src="TEMPLATETEMPLATE.jpg" alt="TEMPLATETEMPLATE" />
+          <div class="przycisk">
+            <button onclick="showPage('#')">PROJEKT</button>
+          </div>
+        </div>
+        --></div>
+      </div>
+      
+
+      <div class="rest">
+        <h1>WSZYSTKIE PROJEKTY</h1>
+        <div class="restProjects">
+          <div class="projekt">
+            <img src="assets/img/p18.jpg" alt="p18.jpg" />
+            <div class="przycisk">
+              <button onclick="showPage('projects/18Sajmona/index.html')">
+                18
+              </button>
+            </div>
+          </div>
+          <div class="projekt">
+            <img src="assets/img/pportal.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('projects/portal/index.html')">
+                PORTAL
+                <div class="warningBadge" style="border-color: rgb(223, 39, 14); color:rgb(223, 39, 14);">
+                  <div class="circle" style="background-color: rgb(223, 39, 14);"></div> PC ONLY
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="projekt">
+            <img src="assets/img/BB.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('/projects/BB/index.html')">BB
+                <div class="warningBadge" style="border-color: rgb(144, 30, 250); color:rgb(144, 30, 250);">
+                  <div class="circle" style="background-color: rgb(144, 30, 250);"></div> WORK IN PROGRESS
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="projekt">
+            <img src="assets/img/MULTIVERSE.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('/projects/multiverse/index.html')">
+                MULTIVERSE
+                <div class="warningBadge" style="border-color: rgb(223, 39, 14); color:rgb(223, 39, 14);">
+                  <div class="circle" style="background-color: rgb(223, 39, 14);"></div> PC ONLY
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="projekt">
+            <img src="assets/img/kp.jpg" alt="TEMPLATETEMPLATE" />
+            <div class="przycisk">
+              <button onclick="showPage('/projects/spalaniePaliwa/index.html')">
+                Kalkulator Paliwa
+                <div class="warningBadge">
+                  <div class="circle"></div> NEW VERSION
+                </div>
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>S1</p>
+    </footer>
+  </body>
+</html>
