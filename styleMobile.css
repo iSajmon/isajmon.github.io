@@ -107,7 +107,7 @@ body {
     font-family: Kanit-Ligh;
   }
   & .menu img {
-    width: 3%;
+    
 
     padding-left: 15px;
 
@@ -237,7 +237,7 @@ button:hover {
 
 @media (max-width: 600px) {
   .menu img {
-    width: 20%;
+    width: 15%;
     padding-left: 15px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;

@@ -40,29 +40,12 @@ body{
 }
 
 
-.km {
-    position: absolute;
-    display: inline;
-    opacity: 0;
-    height: 0;
-    margin: 0;
-    overflow: hidden;
-    transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out, margin 0.2s ease-in-out;
+main {
+    width: 100%;
 }
-
-.km.show {
-    position: relative;
-    opacity: 1;
-    height: auto;
-    margin: auto;  /* Ustaw to na odpowiedni margines dla Twoich potrzeb */
-    
-}
-
 
 
 .firstPart {
-    width: 100vw; /* tu jest problem */
-    
     display: flex;
     text-align: center;
     
@@ -76,10 +59,11 @@ body{
     }
 
     & form {
+        position: relative;
         display: flex;
-        width: 45%;
+        width: 65%;
         background-color: rgb(255, 255, 255); 
-        border-radius: 10px 0px 0px 10px;
+        border-radius: 10px;
         padding: 20px;
         box-shadow: 8px 8px 24px -21px rgba(66, 68, 90, 1);
         justify-content: left;
@@ -146,14 +130,13 @@ body{
     }
 
     & .przykladyCen {
-        display: flex;
-        
-        flex-wrap: wrap;
-        box-shadow: 8px 8px 24px -21px rgba(66, 68, 90, 1);
-        width: 20%;
-        border-radius: 0px 10px 10px 0px;
-        background-color: rgb(255, 255, 255); 
-        padding: 20px;
+        display: grid;
+        grid-template-columns: 70px 70px 70px;
+        justify-content: center;
+        position: absolute;
+        right: 5%;
+        margin: auto;
+
         gap: 5px;
         & .przykladCena {
             background-color: red;
@@ -178,8 +161,39 @@ body{
             transition: scale 0.2s;
         }
     }
+    & details {
+        text-align: center;
+        justify-content: center;
+       
+        font-family: consolas;
+        & summary {
+            list-style: none;
+            font-size: 20px;
+            & h3 {
+                border: solid ;
+                width: 40%;
+                margin: auto;
+                margin-top: 25px;
+                border-radius: 20px;
+                
+            }
+            
+        }
+        & p {
+            font-family: consolas;
+            background-color: aliceblue;
+            border-radius: 5px;
+            color: black;
+            width: 200px;
+            position: absolute;
+            padding: 10px;
+            margin-left: -80px;
+            box-shadow: 8px 8px 24px -21px rgb(0, 0, 0);
+            
+        }
+    }
     & .resultPart {
-        
+        text-align: center;
         box-shadow: 8px 8px 24px -21px rgba(66, 68, 90, 1);
         margin-left: auto;
         width: 20%;
@@ -187,9 +201,7 @@ body{
         border-radius: 10px;
         padding: 20px;
         
-        & label {
-            font-size: 30px;
-        }
+     
         & button {
             background-color: rgb(76, 158, 235);
             border: none;
@@ -208,21 +220,66 @@ body{
             scale: 0.95;
             transition: scale 0.2s;
         }
+        & .result {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        & .pln {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 0px;
+            font-size: 20px;
+            
+        }
+        & .resultNumber {
+            display: flex;
+            text-align: left;
+            font-size: 30px;
+            overflow: hidden;
+            height: 40px;
+            width: fit-content;
+            position: relative;
+            transition: width 1s ease;
+            & label {
+                position: absolute;
+            }
+            & #cenaObecna {
+                top: 0px;
+                bottom: 0px;
+                transition: all 0.5s ease-in-out;
+            }
+            & #cenaPaliwaWiecej {
+             top: 40px;
+             transition: all 0.5s ease-in-out;
+             
+            }
+            & #cenaPaliwaMniej {
+                top: -40px;
+                transition: all 0.5s ease-in-out;
+                
+            }
+            & #placeholderStop {
+                display: none;
+            }
+        }
+        
     }
 
     
 }
 
+.dataPartMobile {
+    display: none;
+}
+
 .dataPart {
-  
-    height: 100vh;
     background-color: rgb(255, 255, 255); 
     border-radius: 10px;
     margin-top: 20px;
     & table {
         border-spacing: 200px 0px;
         text-align: center;
-       
     }
     & .jednostkaTable {
         color: azure;
@@ -239,80 +296,14 @@ body{
         border-radius: 5px;
         font-weight: bold;
     }
+    & img {
+        width: 100%;
+        max-width: 400px;
+
+    }
 }
 
 
-.info {
-    overflow: hidden;
-    width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    height: 100px;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    transition: width 1s ease-in;
-    & .infoText {
-        opacity: 0;
-        transition: opacity 1s ease-in;
-    }
-    
-}
-
-
-
-
-.infoShow {
-    width: 800px;
-    padding: 20px;
-    margin: 0;
-    border: solid;
-    height: 200px;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    border-radius: 15px;
-    z-index: 1;
-    background-color: rgb(255, 255, 255); 
-    
-    position: absolute;
-    transition: width 0.5s, height 0.2s, opacity 1.5s;
-
-    & button {
-        background-color: rgb(76, 158, 235);
-        border: none;
-        width: 100px;
-        height: 40px;
-        padding: 5px;
-        margin-top: 15px;
-        border-radius: 10px;
-        font-size: 20px;
-        font-weight: bold;
-        color: azure;
-        cursor: pointer;
-        transition: scale 0.2s;
-    }
-    & button:active {
-        scale: 0.95;
-        transition: scale 0.2s;
-    }
-    & .infoText {
-        opacity: 1;
-        transition: opacity 1s ease-in;
-    }
-    
-}
 
 
 
