@@ -74,11 +74,11 @@ function showKoszty(wynik) {
 
 
 
- 
+ wynik = new Number(wynik);
 
 
 
-  if(wynik > cenaObecna.value) {
+  if(wynik > parseFloat(cenaObecna.value)) {
     console.log(wynik);
     cenaWiecej.innerText = wynik;
     cenaWiecej.style.top = '0px';
@@ -97,7 +97,7 @@ function showKoszty(wynik) {
         },100)
       },1000)
     }, 1000)
-  } else if(wynik < cenaObecna.value) {
+  } else if(wynik < parseFloat(cenaObecna.value)) {
     console.log(wynik);
     cenaMniej.innerText = wynik;
     cenaMniej.style.top = '0px';
