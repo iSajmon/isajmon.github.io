@@ -6,3 +6,7 @@
     font-family: "PDark";
     src: url(/assets/font/PDARK.TTF);
   }
+@font-face {
+  font-family: "MPLUS";
+  src: url(assets/font/MPLUSRounded1c-Bold.ttf);
+}

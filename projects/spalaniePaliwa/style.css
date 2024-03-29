@@ -67,10 +67,11 @@ main {
         padding: 20px;
         box-shadow: 8px 8px 24px -21px rgba(66, 68, 90, 1);
         justify-content: left;
+        padding-bottom: 30px;
         
         & table {
             
-            height: 100px;
+            height: auto;
             & td {
                 position: relative;
             }
@@ -86,6 +87,34 @@ main {
            
             
            
+        }
+        & input[type="checkbox"] {
+            appearance: auto; 
+            width: 20px; 
+            height: 15px;
+            padding: 0;
+            margin: auto;
+            transition: scale 0.5s;
+      
+            
+        }
+        & input[type="checkbox"]:checked {
+          accent-color: rgb(107, 182, 253);
+          scale: 1.5;
+          transition: scale 0.5s;
+          
+            
+        }
+        & input[type="checkbox"]:hover {
+            accent-color: rgb(107, 182, 253);
+            scale: 0.9;
+            transition: scale 0.5s;
+  
+              
+        }
+        & .checkbox {
+            position: absolute;
+            bottom: 10px;
         }
         & input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {

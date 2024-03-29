@@ -62,7 +62,6 @@ main {
     }
 
     & form {
-        height: fit-content;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -141,7 +140,7 @@ main {
         grid-template-columns: 70px 70px 70px;
         justify-content: center;
         padding-top: 10px;
-
+        height: fit-content;
         right: 5%;
         margin: auto;
 

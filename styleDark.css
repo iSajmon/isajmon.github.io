@@ -103,7 +103,7 @@ body {
   }
   & .menu p {
     
-    font-family: Kanit-Ligh;
+    font-family: MPLUS;
   }
   & .menu img {
     width: 3%;
@@ -245,7 +245,7 @@ button:hover {
   
   margin-top: 80px;
   & h1 {
-    font-family: Kanit-Ligh;
+    font-family: MPLUS;
     font-weight: 800;
     color: aliceblue;
     margin: auto;

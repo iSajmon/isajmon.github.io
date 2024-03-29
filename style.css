@@ -26,7 +26,7 @@
     animation: spin 2s linear infinite;
   }
   & .load p {
-    font-family: Kanit-Ligh;
+    font-family: MPLUS;
     font-size: 50px;
     margin-top: 80%;
     font-weight: bold;
@@ -69,8 +69,8 @@ body {
   background: rgb(205, 250, 255);
   background: linear-gradient(
     0deg,
-    rgba(205, 250, 255, 1) 0%,
-    hwb(0 100% 0%) 100%
+    #cdfaff 0%,
+    #ffffff 100%
   );
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@ body {
   }
   & .menu p {
     
-    font-family: Kanit-Ligh;
+    font-family: MPLUS;
   }
   & .menu img {
     width: 3%;
@@ -246,7 +246,7 @@ button:hover {
 .rest {
   margin-top: 80px;
   & h1 {
-    font-family: Kanit-Ligh;
+    font-family: MPLUS;
     font-weight: 800;
     color: #000000;
     margin: auto;
