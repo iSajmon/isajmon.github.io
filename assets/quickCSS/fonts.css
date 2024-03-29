@@ -23,6 +23,11 @@
     src: url(/assets/font/soloist1.ttf);
 }
 
+@font-face {
+    font-family: MPLUS ;
+    src: url(/assets/font/MPLUSRounded1c-Bold.ttf);
+  }
+
 /* @font-face {
     font-family: ;
     src: url(/assets/font/.ttf);
