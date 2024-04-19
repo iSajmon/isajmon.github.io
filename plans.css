@@ -1,5 +1,9 @@
 @import url(assets/quickCSS/fonts.css);
 
+* {
+    transition: all 0.5s;
+}
+
 body {
     font-family: consolas;
     margin-top: 0;
@@ -143,8 +147,11 @@ body {
         height: fit-content;
     }
 }
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1510px) {
     .plans {
         justify-content: left;
+    }
+    .plan {
+        width: 100%;
     }
 }
