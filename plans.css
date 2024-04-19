@@ -101,6 +101,12 @@ body {
     & h1 {
         margin: auto;
     }
+    & p {
+        font-weight: 100;
+        color: gray;
+        font-style: italic;
+        text-align: right;
+    }
   }
 
   
