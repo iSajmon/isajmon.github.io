@@ -269,8 +269,25 @@ button:hover {
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+  background-color: #3e4244;
   font-size: 9px;
-  font-family: PDark;
+  font-family: mplus;
+
   text-align: center;
-  margin-top: auto;
+  top: 60px;
+  margin: auto;
+  & a {
+    padding: 5px 40px;
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  & a:hover {
+    scale: 1.1;
+  }
 }

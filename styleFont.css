@@ -1,12 +1,16 @@
+* {
+  text-rendering:optimizeLegibility;
+}
+
 @font-face {
     font-family: "Kanit-Ligh";
-    src: url(/assets/font/Kanit-Light.ttf);
+    src: url(assets/font/Kanit-Light.ttf);
   }
   @font-face {
     font-family: "PDark";
-    src: url(/assets/font/PDARK.TTF);
+    src: url(assets/font/PDARK.TTF);
   }
 @font-face {
-  font-family: "MPLUS";
+  font-family: "MPLUS" ;
   src: url(assets/font/MPLUSRounded1c-Bold.ttf);
 }

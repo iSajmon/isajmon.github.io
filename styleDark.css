@@ -70,7 +70,6 @@ body {
   background: linear-gradient(0deg, rgba(59,59,59,1) 0%, rgba(0,0,0,1) 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 5px;
   justify-content: center;
   min-height: 100vh;
   display: flex;
@@ -87,6 +86,8 @@ body {
     border-radius: 15px;
     box-shadow: 0px -100px 70px 52px rgb(33, 33, 34);
     z-index: 3;
+    width: 99.5%;
+    margin: auto;
   }
   & .menu {
     color: aliceblue;
@@ -297,8 +298,25 @@ button:hover {
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+  background-color: #3e4244;
   font-size: 9px;
-  font-family: PDark;
+  font-family: mplus;
+  width: 98%;
   text-align: center;
-  margin-top: auto;
+  top: 60px;
+  margin: auto;
+  & a {
+    padding: 5px 40px;
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  & a:hover {
+    scale: 1.1;
+  }
 }
