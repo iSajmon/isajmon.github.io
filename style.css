@@ -85,9 +85,6 @@ body {
 
 & /*div.menu*/ {
   & .menu_blur {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: sticky;
     top: 16px;
     border-radius: 15px;
