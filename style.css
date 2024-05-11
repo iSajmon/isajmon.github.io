@@ -44,12 +44,13 @@
 }
 
 & /*skrypt-styl */ {
-  & .main,
-  footer {
+  & .main{
+
     display: block;
     position: relative;
     animation-name: animatebottom;
     animation-duration: 1s;
+    height: 100%;
   }
 }
 
@@ -76,7 +77,6 @@ body {
   );
   background-attachment: fixed;
   background-repeat: no-repeat;
-  
   justify-content: center;
   min-height: 100vh;
   display: flex;
@@ -91,8 +91,17 @@ body {
     box-shadow: 0px -100px 70px 52px rgb(249, 250, 253);
     z-index: 3;
     width: 99.5%;
-    margin: auto;
-    
+    margin: auto; 
+  }
+  & .menu_blurAb {
+    position: absolute;
+    top: 16px;
+    border-radius: 15px;
+    box-shadow: 0px -100px 70px 52px rgb(249, 250, 253);
+    z-index: 3;
+    width: 99.5%;
+    margin: auto; 
+    bottom: 0px;
   }
   & .menu {
     z-index: 4;
@@ -104,20 +113,41 @@ body {
     justify-content: center;
     position: sticky;
     top: 16px;
+    &  p {
     
+      font-family: MPLUS;
+    }
+    & img {
+      width: 3%;
+      padding-left: 15px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
   }
-  & .menu p {
+  & .menuAb {
+    z-index: 4;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    & p {
     
-    font-family: MPLUS;
+      font-family: MPLUS;
+    }
+    & img {
+      width: 3%;
+  
+      padding-left: 15px;
+  
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
   }
-  & .menu img {
-    width: 3%;
 
-    padding-left: 15px;
-
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
   & .whatsNew{
     position: absolute;
     margin: auto;
@@ -247,6 +277,7 @@ button:hover {
 
 .rest {
   margin-top: 80px;
+  margin-bottom: 120px;
   & h1 {
     font-family: MPLUS;
     font-weight: 800;
@@ -301,18 +332,18 @@ button:hover {
 }
 
 footer {
+  position: relative;
+  animation-name: animatebottom;
+  animation-duration: 1s;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 10px 10px 0px 0px;
   padding: 10px;
   background-color: #3e4244;
   font-size: 9px;
   font-family: mplus;
-  width: 98%;
-  text-align: center;
-  top: 60px;
+  box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
   margin: auto;
+  position: relative;
   & a {
     padding: 5px 40px;
     font-size: 15px;
@@ -322,4 +353,78 @@ footer {
   & a:hover {
     scale: 1.1;
   }
+  & .logo {
+    width: 55%;
+    display: flex;
+    & img {
+      width: auto;
+      height: auto;
+      max-height: 200px;
+      object-fit: scale-down;
+    }
+  }
+  & .links {
+    width: 45%;
+    padding-top: 40px ;
+   & ul {
+    padding-left: 0;
+    border-left: solid white;
+    list-style: none;
+   }
+   & a:hover {
+    color: rgb(185, 185, 185);
+   }
+
+  }
+  & .copy {
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    color: gray;
+    border-top: solid thin;
+  }
+}
+.cookiesWarningHide {
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.cookiesWarning {
+  display: flex;
+  height: 100%;
+  margin: auto;
+ 
+  overflow: hidden;
+  position: sticky;
+  bottom: 0px;
+  background-color: aliceblue;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
+  & button {
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(80, 80, 80) ;
+    position: absolute;
+    right: 5%;
+    margin: auto;
+    height: 60%;
+    width: 175px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: MPLUS ;
+    
+  }
+  & button:hover {
+    scale: 1.1;
+  }
+  & p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+
 }

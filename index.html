@@ -26,8 +26,8 @@
       <p>ŁADOWANIE STRONY</p>
     </div>
     <div class="main">
-      <div class="menu_blur">
-        <div class="menu">
+      <div class="menu_blur" id="menub">
+        <div class="menu" id="menu">
           <img src="assets/img/S1v3.png" alt="logo" />
           <div class="modeSlider"> 
             <div class="sliderCircle" onclick="changeStyle()"></div>
@@ -168,7 +168,7 @@
       
 
       <div class="rest">
-        <h1>WSZYSTKIE PROJEKTY</h1>
+        <h1>ALL PROJECTS</h1>
         <div class="restProjects">
           <div class="projekt">
             <img src="assets/img/p18.jpg" alt="p18.jpg" />
@@ -225,8 +225,29 @@
       </div>
     </div>
     <footer>
-     <a href="whatsNew.html">what's new?</a><br>
-     <a href="plans.html">plans</a><br>
+      <div class="logo">
+          <img src="assets/img/S1ProjectsLogoTransparent.png" alt="S1ProjectsLogoTransparent">
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="whatsThis.html">what is this?</a></li>
+          <li><a href="whatsNew.html">what's new?</a></li>
+          <li><a href="mailto:simon@soneprojects.com">send me a mail</a></li>
+          <li><a href="plans.html">plans</a></li>
+        </ul>        
+      </div>
+      <div class="copy">
+        <p>copyright &copy; 2024 soneprojects</p>
+      </div>
     </footer>
+
+    <div class="cookiesWarningHide" id="cookiesWarning">
+      <div>
+        <p>Strona używa pliki cookies(ciasteczka) do prawidłowego działania </p>
+      <p style="font-size: 15px; color: gray; font-weight: normal; margin-top: -20px;">Ten komunikat zostanie ukryty na zawsze po kliknięciu przycisku</p>
+      </div>
+      <button id="cookiesAccept" onclick="cookiesAccept()">ROZUMIEM</button>
+      
+    </div>
   </body>
 </html>
