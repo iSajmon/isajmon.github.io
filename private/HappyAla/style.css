@@ -113,6 +113,6 @@ main {
         padding: 10px;
         border-radius: 5px;
         rotate: -5deg;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
