@@ -28,6 +28,21 @@
     src: url(/assets/font/MPLUSRounded1c-Bold.ttf);
   }
 
+@font-face {
+    font-family: Varela ;
+    src: url(/assets/font/VarelaRound-Regular.ttf);
+}
+
+@font-face {
+    font-family: mplusRegular;
+    src: url(/assets/font/MPLUSRounded1c-Regular.ttf);
+}
+
+@font-face {
+    font-family: PANTON;
+    src: url(/assets/font/PantonDemoBlack.otf);
+}
+
 /* @font-face {
     font-family: ;
     src: url(/assets/font/.ttf);

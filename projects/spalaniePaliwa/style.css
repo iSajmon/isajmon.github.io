@@ -24,17 +24,21 @@
   }
 body{
     font-family: Mooli;
-    background: rgb(169,237,255);
-    background: linear-gradient(331deg, rgba(169,237,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(131, 131, 131);
+    background-image: url(assets/img/istockphoto-983030660-612x612.jpg);
+
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 5px;
     display: flex;
     /* justify-content: center;
     align-items: center; */
     height: 100vh;
     margin:0;
-    padding: 40px; 
+    padding: 0px 7.5% ; 
+    box-sizing: border-box;
+    flex-direction: column;
     
 
 }
@@ -42,6 +46,9 @@ body{
 
 main {
     width: 100%;
+    flex: 1;
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
@@ -63,9 +70,9 @@ main {
         display: flex;
         width: 65%;
         background-color: rgb(255, 255, 255); 
-        border-radius: 10px;
+        /* border-radius: 10px; */
         padding: 20px;
-        box-shadow: 8px 8px 24px -21px rgba(66, 68, 90, 1);
+        /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
         justify-content: left;
         padding-bottom: 30px;
         
@@ -81,7 +88,7 @@ main {
             height: 25px;
             width: 200px;
             border-radius: 5px 0px 0px 5px;
-            border: 2px solid rgb(172, 172, 172);
+            border: 1.5px solid rgb(172, 172, 172);
             appearance: none;
             margin: 0px 0px 0px 0px;
            
@@ -95,19 +102,19 @@ main {
             padding: 0;
             margin: auto;
             transition: scale 0.5s;
+            scale: 0.9;
       
             
         }
         & input[type="checkbox"]:checked {
-          accent-color: rgb(107, 182, 253);
-          scale: 1.5;
+          accent-color: rgb(25, 25, 26);
+          scale: 1.3;
           transition: scale 0.5s;
           
             
         }
         & input[type="checkbox"]:hover {
-            accent-color: rgb(107, 182, 253);
-            scale: 0.9;
+            accent-color: rgb(25, 25, 26);
             transition: scale 0.5s;
   
               
@@ -122,38 +129,33 @@ main {
          margin: 0;
         }
         & input:focus {
-            outline: none;
-            border-color: rgb(107, 182, 253);
+            
+            border-color: rgb(48, 48, 49);
             
             
         }
         
-        & .jednostkaShow {
+        & .jednostka {
+            text-align: center;
             color: azure;
-            background-color: rgb(107, 182, 253);
+            background-color: rgb(48, 48, 49);
             margin: 0;
             margin-left: -5px;
             width: 80px;
-            padding: 6px 0px 6px  0px;
             border-radius: 0px 5px 5px 0px ;
             transition: width 1s ease-in;
             overflow: hidden;
-            
+            vertical-align: middle;
+            line-height: 28.5px; 
+           
         }
-        & .jednostkaHidden {
-            color: azure;
-            margin: 0;
-            width: 0px;
-            overflow: hidden;
-            transition: width 1s ease-in, margin 0.5s;
-            background-color: rgb(107, 182, 253);
-            padding: 7px 0px 7px  0px;
-            border-radius: 0px 5px 5px 0px ;
-    
-        }
+        
         & tr>td:nth-child(2) {
             /* każda druga komórka w wierszu */
             padding-left: 30px;
+        }
+        & tr>td>p {
+            text-align: right;
         }
         
     }
@@ -217,22 +219,22 @@ main {
             position: absolute;
             padding: 10px;
             margin-left: -80px;
-            box-shadow: 8px 8px 24px -21px rgb(0, 0, 0);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             
         }
     }
     & .resultPart {
         text-align: center;
-        box-shadow: 8px 8px 24px -21px rgba(66, 68, 90, 1);
+        /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
         margin-left: auto;
-        width: 20%;
+        width: 35%;
         background-color: rgb(255, 255, 255); 
-        border-radius: 10px;
+        /* border-radius: 10px; */
         padding: 20px;
         
      
         & button {
-            background-color: rgb(76, 158, 235);
+            background-color: rgb(48, 48, 49);
             border: none;
             width: 100px;
             height: 40px;
@@ -303,22 +305,24 @@ main {
 }
 
 .dataPart {
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     background-color: rgb(255, 255, 255); 
-    border-radius: 10px;
-    margin-top: 20px;
+    /* border-radius: 10px;
+    margin-top: 20px; */
+
     & table {
         border-spacing: 200px 0px;
         text-align: center;
     }
     & .jednostkaTable {
         color: azure;
-        background-color: rgb(76, 158, 235);
+        background-color: rgb(48, 48, 49);
         padding: 5px;
         border-radius: 5px;
         
     }
     & .koncoweDane {
-        border: solid 2px rgb(76, 158, 235);
+        border: solid 2px rgb(48, 48, 49);
         padding: 2.5px;
         padding-right: 5px;
         margin-right: -10px;
@@ -327,7 +331,7 @@ main {
     }
     & img {
         width: 100%;
-        max-width: 400px;
+        max-width: 200px;
 
     }
 }

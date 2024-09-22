@@ -1,0 +1,118 @@
+@import url(/assets/quickCSS/scrollbar.css);
+@import url(/assets/quickCSS/fonts.css);
+
+body {
+    background: rgb(255,255,255);background: linear-gradient(18deg, rgba(255,255,255,1) 11%, rgba(212,248,255,1) 48%, rgba(0,212,255,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main {
+    background-color: rgba(131, 131, 131, 0.411);
+    padding: 10px;
+    border-radius: 10px;
+}
+.partMiddle {
+    font-family: Varela;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    & img {
+        width: 95%;
+        height: 300px;
+        border: 3px solid white;
+        padding: 10px;
+        border-radius: 5px;
+        rotate: -5deg;
+        object-fit: cover;
+    }
+   
+}
+
+.partLeft {
+    display: flex;
+    font-family: Varela;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: right;
+    & img {
+        position: relative;
+        left: -20px;
+        width: 49%;
+        height: 280px;
+        border: 3px solid white;
+        padding: 10px;
+        border-radius: 5px;
+        rotate: -5deg;
+        object-fit: cover;
+    }
+   
+}
+
+.partRight {
+    display: flex;
+    font-family: Varela;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: left;
+    & img {
+        position: relative;
+        right: -20px;
+        width: 49%;
+        height: 280px;
+        border: 3px solid white;
+        padding: 10px;
+        border-radius: 5px;
+        rotate: 5deg;
+        object-fit: cover;
+    }
+   
+}
+.arrow img {
+    width: 25%;
+    justify-self: center;
+    margin: auto;
+    left: auto;
+    top: -20px;
+    right: -65%;
+    position: relative;
+    
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-left: -20px;
+    margin-right: -20px;
+    gap: 20px;
+    
+    & img {
+        width: 40%;
+        border: 3px solid white;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+}
+
+.lastPart {
+    font-family: Varela;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+    & img {
+        margin-top: 20px;
+        width: 99%;
+        height: 300px;
+        border: 3px solid white;
+        padding: 10px;
+        border-radius: 5px;
+        rotate: -5deg;
+        object-fit: contain;
+    }
+}
