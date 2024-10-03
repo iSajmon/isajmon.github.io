@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interwały i timeouty</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <h1>Interały i timeouty</h1>
+    <div class="datetime">
+        <p>Aktualna data: <span id="data"></span></p>
+        <p>Aktualny czas: <span id="czas"></span></p>
+    </div>
+
+    <div id="stoperContainer">
+        <code id="stoper">00:00:00</code>
+        <button onclick="stoperStart()">Start</button>
+        <button onclick="stoperStop()">Stop</button>
+    </div>
+    <br>
+    <input type="number" placeholder="minuty" id="minuty"><br> 
+    <div id="timerContainer">
+        
+        <code id="timer">00:00:00</code>
+        <div class="startEnd">
+        <button onclick="timerCustom()" style="border-radius: 5px 5px 0px 0px; border-bottom: 0;" >START</button>
+        <button onclick="timerStop()" style="border-radius: 0px 0px 5px 5px;">STOP</button>
+        </div>
+        <button onclick="timerStart(120)">2:00</button>
+        <button onclick="timerStart(600)">10:00</button>
+        <button onclick="timerStart(3600)">1:00:00</button>
+        
+    </div>
+</div>
+</body>
+</html>
