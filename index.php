@@ -160,82 +160,49 @@
         --></div>
       </div>
       
-
       <div class="rest">
         <h1>WSZYSTKIE PROJEKTY</h1>
         <div class="restProjects">
-          <div class="projekt">
-            <img src="assets/img/p18.jpg" alt="p18.jpg" />
-            <div class="przycisk">
-              <button onclick="showPage('projects/18')">
-                18
-              </button>
-            </div>
-          </div>
-          <div class="projekt">
-            <img src="assets/img/pportal.jpg" alt="TEMPLATETEMPLATE" />
-            <div class="przycisk">
-              <button onclick="showPage('projects/portal')">
-                PORTAL
-                <div class="warningBadge" style="border-color: rgb(223, 39, 14); color:rgb(223, 39, 14);">
-                  <div class="circle" style="background-color: rgb(223, 39, 14);"></div> PC ONLY
-                </div>
-              </button>
-            </div>
-          </div>
-          <div class="projekt">
-            <img src="assets/img/BB.jpg" alt="TEMPLATETEMPLATE" />
-            <div class="przycisk">
-              <button onclick="showPage('/projects/BB')">BB
-              </button>
-            </div>
-          </div>
-          <div class="projekt">
-            <img src="assets/img/MULTIVERSE.jpg" alt="TEMPLATETEMPLATE" />
-            <div class="przycisk">
-              <button onclick="showPage('/projects/multiverse')">
-                MULTIVERSE
-                <div class="warningBadge" style="border-color: rgb(223, 39, 14); color:rgb(223, 39, 14);">
-                  <div class="circle" style="background-color: rgb(223, 39, 14);"></div> PC ONLY
-                </div>
-              </button>
-            </div>
-          </div>
+          <?php
+              
+              include 'dbcon.php';
 
-          <div class="projekt">
-            <img src="assets/img/kp.jpg" alt="TEMPLATETEMPLATE" />
-            <div class="przycisk">
-              <button onclick="showPage('/projects/spalaniePaliwa')">
-                Kalkulator Paliwa
-              </button>
-            </div>
-        </div>
-        
-        <div class="projekt">
-          <img src="assets/img/ka.jpg" alt="TEMPLATETEMPLATE" />
-          <div class="przycisk">
-            <button onclick="showPage('/projects/kalkulatorArgusow')">Kalkulator Argusów
-              <div class="warningBadge">
-                <div class="circle"></div> NEW
-              </div>
-            </button>
-          </div>
-        </div>
+            
+              $sql = "SELECT * FROM projects";
+              $result = $conn->query($sql);
 
-        <div class="projekt">
-          <img src="assets/img/st.jpg" alt="TEMPLATETEMPLATE" />
-          <div class="przycisk">
-            <button onclick="showPage('/projects/studyTimer')">STUDY TIMER
-              <div class="warningBadge" style="border-color: rgb(29, 147, 216); color: rgb(29, 147, 216);" >
-                <div class="circle" style="background-color: rgb(29, 147, 216);"></div> BETA
-              </div>
-            </button>
-          </div>
-        </div>
+           
+              if ($result->num_rows > 0) {
+              
+                  $projects = $result->fetch_all(MYSQLI_ASSOC);
 
+              
+                  foreach ($projects as $project) {
+                    ?>
+                    <div class="projektv2" onclick="showPage('<?php echo $project['url']; ?>')">
+                        <img src="assets/img/<?php echo $project['photo']; ?>" alt="<?php echo $project['nazwa']; ?>" />
+                        <div class="text">
+                            <h2>
+                                <?php echo $project['nazwa']; ?>
+                                <?php if (!empty($project['badge'])): ?>
+                                    <?php echo $project['badge']; ?>
+                                <?php endif; ?>
+                            </h2>
+                            <p><?php echo $project['description']; ?></p>
+                        </div>
+                    </div>
+                    <?php
+                }
+                
+              } else {
+                  echo "Brak wyników";
+              }
+              $conn->close();
+          ?>
       </div>
-    </div>
-    <footer>
+  
+    
+      <footer>
       <div class="logo">
           <img src="assets/img/S1ProjectsLogoTransparent.png" alt="S1ProjectsLogoTransparent">
       </div>
@@ -258,7 +225,6 @@
       <p style="font-size: 15px; color: gray; font-weight: normal; margin-top: -20px;">Ten komunikat zostanie ukryty na zawsze po kliknięciu przycisku</p>
       </div>
       <button id="cookiesAccept" onclick="cookiesAccept()">ROZUMIEM</button>
-      
     </div>
   </body>
 </html>
