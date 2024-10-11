@@ -13,19 +13,19 @@
 </head>
 <body>
     <div class="settings" id="settings">
-        <i class="material-symbols-rounded" onclick="togleSettings()">close</i><h1>USTAWIENIA</h1>
+        <i class="material-symbols-rounded" id="X" onclick="togleSettings()" style="color: #FF454B; transition: rotate 1s; rotate: 100deg;">close</i><h1>USTAWIENIA</h1>
         <table>
             <tr>
                 <td><label for="time">Długość nauki:</label></td>
-                <td><input type="number" name="time" id="time" value="2" placeholder="WYMAGANE" onclick="reset()"> <label for="time">h</label></td>
+                <td><input type="number" name="time" id="time" value="2" placeholder="WYMAGANE" onclick="resetValues('reset')" onfocusout="resetValues()"> <label for="time">h</label></td>
             </tr>
             <tr>
                 <td><label for="studyTime">Długość sesji:</label></td>
-                <td><input type="number" name="studyTime" id="studyTime" value="45" placeholder="WYMAGANE" onclick="reset()"> <label for="studyTime">min</label></td>
+                <td><input type="number" name="studyTime" id="studyTime" value="45" placeholder="WYMAGANE" onclick="resetValues('reset')" onfocusout="resetValues()"> <label for="studyTime">min</label></td>
             </tr>
             <tr>
                 <td><label for="breakTime">Długość przerwy:</label></td>
-                <td><input type="number" name="breakTime" id="breakTime" value="15" placeholder="WYMAGANE" onclick="reset()"> <label for="breakTime">min</label></td>
+                <td><input type="number" name="breakTime" id="breakTime" value="15" placeholder="WYMAGANE" onclick="resetValues('reset')" onfocusout="resetValues()"> <label for="breakTime">min</label></td>
             </tr>
         </table>
         
@@ -41,8 +41,8 @@
     <h1 class="timer" id="timer">00:00</h1>
     <button class="start" onclick="startTimer()">START</button>
     <div class="pauseButtons">
-        <button class="resume" onclick="startTimer()">START</button>
-        <button class="reset" onclick="">RESET</button>
+        <button class="resume" onclick="unPause()">START</button>
+        <button class="reset" onclick="reset(), resetBtns()">RESET</button>
     </div>
 </body>
 </html>
